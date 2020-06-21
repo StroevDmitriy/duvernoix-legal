@@ -1,0 +1,37 @@
+html(lang="en")
+  include ../includes/head.pug
+    title Карточка проекта
+  body.project-card-page
+    section.project-card-heading
+      include ../includes/header.pug
+    
+      .breadcrumb-container.container.first-section
+          .breadcrumb
+            li.breadcrumb-item
+              a(href="#") Проекты
+            li.breadcrumb-item Utair
+      
+    section.main-content.d-flex
+      .main-title-block
+        .main-title-container
+          .title Utair
+            span Авиакомпания «Ютэйр»
+      .project-info-block
+        .main-img-container
+          img(src="img/sky-big.jpg", alt="")
+        .content.d-flex
+          .desc-block.about-client
+            .title О клиенте
+            .desc Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus praesentium nisi consequatur officia nemo ullam, adipisci sapiente inventore laudantium magnam tenetur eveniet perferendis totam saepe autem, optio culpa accusantium tempora vitae corporis. Aperiam veritatis quidem aut dolorum illo minus quibusdam quod eius aliquam omnis, officia assumenda rerum delectus ratione vel!
+          .desc-block.company-role
+            .title Роль Дювернуа Лигал
+            .desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur doloremque assumenda id nostrum voluptate enim a velit, voluptates mollitia quam. Quis culpa nesciunt non labore accusantium est, ea iure adipisci.
+        a.next-project-link(href="#")
+          .title далее
+            span Партия еды
+          .img-container
+            img(src="img/partiya_edy.jpg", alt="")
+
+    include ../includes/footer.pug
+
+    script(src="js/main.js")

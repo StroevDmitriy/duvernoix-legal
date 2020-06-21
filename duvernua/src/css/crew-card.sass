@@ -1,0 +1,212 @@
+.crew-card-page
+  .breadcrumb
+    li
+      color: #707070
+      &::before
+        color: #707070
+    a
+      color: #707070
+  .breadcrumb-container
+    margin-bottom: 27px
+  .main-content
+    .person-card
+      position: relative
+      margin-bottom: 34px
+      &::after
+        position: absolute
+        content: ''
+        bottom: 0px
+        left: 0px
+        height: 1px
+        width: 100%
+
+        background-color: #E5E5E5
+    .person-img-container
+      img
+        width: 100%
+    h1
+      margin-bottom: 6px
+
+      font-size: 37px
+      font-weight: 700
+      letter-spacing: 1px
+    .person-info
+      .spec-block
+        margin-bottom: 30px
+      h3
+        display: inline-flex
+
+        padding: 9px 12px
+        align-items: center
+        justify-content: center
+
+        color: #fff
+        font-size: 15px
+        font-weight: 700
+        text-transform: uppercase
+      
+        background-color: var(--bgshadow)
+      .title-container
+        position: relative
+        margin-bottom: 25px
+      .name-block
+        margin-bottom: 27px
+        .status
+          font-size: 14px
+          letter-spacing: .5px
+          text-transform: lowercase
+      .contact-block
+        .email-container
+          margin-bottom: 35px
+          .title
+            font-size: 14px
+          a
+            color: var(--bgshadow)
+            font-size: 14px
+            font-weight: 500
+            @media (hover)
+              &:hover
+                color: var(--hover)
+        .contact-buttons
+          margin-bottom: 118px
+          a
+            display: inline-flex
+
+            padding: 8px 15px
+            align-items: center
+            justify-content: center
+
+            color: #fff
+            font-size: 14px
+            text-transform: lowercase
+
+            background-color: var(--hover)
+            &:not(:last-child)
+              margin-right: 10px
+            @media (hover)
+              &:hover
+                background-color: var(--bgshadow)
+      .person-characteristic
+        margin-bottom: 100px  
+        .title-container
+          transition: all .5s
+          &::after
+            position: absolute
+            content: ''
+            top: 0px
+            left: 0px
+            height: 1px
+            width: 100%
+
+            background-color: #E5E5E5
+        .content
+          font-size: 14px
+          line-height: 1.4
+
+          transition: initial
+      .specialization-block
+      .education-block,
+      .career-block
+        margin-bottom: 30px
+        .content
+          display: flex
+          
+          flex-flow: wrap
+          justify-content: space-between
+
+          transition: initial
+          .content-item
+            width: 44%
+            margin-bottom: 26px
+
+            padding-right: 10px
+            .dates
+              margin-bottom: 5px
+
+              font-size: 16px
+              font-weight: 500
+            .desc
+              font-size: 14px
+      .rating-block
+        .desc
+          margin-bottom: 38px
+        .rating-name
+          margin-bottom: 10px
+
+          font-size: 14px
+          span
+            display: block
+            margin-bottom: 10px
+
+            font-size: 16px
+            font-weight: 500
+            text-transform: uppercase
+        .nomination
+          &-row
+            display: flex
+            flex-flow: wrap
+          &-item
+            &:not(:last-child)
+              margin-right: 50px
+          &-name
+            font-size: 13px
+            font-weight: 500
+
+            text-transform: uppercase
+          &-desc
+            font-size: 14px
+      .publications-block
+        .content
+          font-size: 14px
+        .name
+          margin-bottom: 16px
+        .publication-link
+          text-decoration: underline
+    .next-person-link-container
+      display: flex
+      margin-bottom: 10px
+
+      justify-content: flex-end
+    .next-person-link
+      display: inline-flex
+
+      align-items: center
+
+      z-index: 100
+      .title
+        margin-right: 12px
+        color: #A5A5A5
+        font-size: 12px
+        .status,
+        .name
+          color: #171717
+          font-size: 13px
+        .status
+          margin-top: 6px
+          margin-bottom: 4px 
+        .name
+          display: block
+
+          color: #171717
+          text-transform: uppercase
+      .img-container
+        height: 78px
+        width: 78px
+
+        border: 2px solid transparent
+        border-radius: 50%
+
+        overflow: hidden
+        img
+          height: 100%
+          width: 100%
+
+          object-fit: cover
+          object-position: center
+      @media (hover)
+        &:hover
+          .img-container
+            border-color: var(--elem-color-blue)
+
+
+

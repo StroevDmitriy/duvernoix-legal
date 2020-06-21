@@ -1,0 +1,114 @@
+.footer
+  position: relative
+
+  background-color: #fff
+
+  z-index: 900
+  .main-row
+    padding-top: 50px
+    padding-bottom: 140px
+
+    background-image: url('../img/footer-bg.png')
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: 100% auto
+  .row
+    flex-flow: nowrap
+    justify-content: space-between
+  .contacts-block
+  .contacts-col-item
+    display: flex
+    flex-flow: column
+    align-items: flex-start
+    &:not(:last-child)
+      margin-right: 110px
+    .title
+      margin-bottom: 30px
+
+      font-size: 18px
+      font-weight: 700
+    .tel,
+    .email
+      color: #171717
+      font-size: 12px
+      font-weight: 700
+    .tel
+      margin-bottom: 7px
+    .email
+      margin-bottom: 17px
+    .adress
+      max-width: 160px
+
+      font-size: 12px
+      line-height: 1.4
+    a
+      position: relative
+      padding-bottom: 3px
+      &:after
+        position: absolute
+        left: 0px
+        bottom: 0px
+        height: 1px
+        width: 0%
+        content: ''
+
+        background-color: #000000
+
+        transition: all .3s
+      @media (hover)
+        &:hover::after
+          width: 100%
+          
+  .facts-block
+    max-width: 300px
+    .title
+      margin-bottom: 20px
+
+      color: var(--hover)
+      font-size: 18px
+      font-weight: 700
+    .desc
+      font-size: 12px
+      line-height: 1.4
+  .second-row
+    position: fixed
+    width: 100%
+    left: 0px
+    bottom: 0px
+
+    padding: 10px 0px
+
+    background-color: rgba(255,255,255,.5)
+
+    z-index: 600
+    @media (hover)
+      &:hover
+        background-color: rgba(255,255,255,1)
+    .social-block
+      svg
+        height: 15px
+      a
+        @media (hover)
+          &:hover
+            path
+              fill: #fff
+    a
+      display: flex
+      height: 30px
+      width: 30px
+
+      align-items: center
+      justify-content: center
+
+      color: #000
+      font-size: 11px
+      font-weight: 500
+      border: 1px solid #000
+      @media (hover)
+        &:hover
+          color: #fff
+          background-color: #000
+      &:not(:last-child)
+        margin-right: 10px
+
+

@@ -1,0 +1,57 @@
+html(lang="en")
+  include ../includes/head.pug
+    title Карточка новости
+  body.news-card-page
+    section.news-heading
+
+      include ../includes/header.pug
+
+      .breadcrumb-container.container.first-section
+        .breadcrumb
+          li.breadcrumb-item
+            a(href="#") Новости
+          li.breadcrumb-item Январь вступает в силу
+
+      .container
+        .heading-container
+          .main-title Новости
+
+    .main-content
+      .container
+        .row
+          section.col-md-8.col-12.news-content
+            .date-info.d-flex
+              .date 08.01.2020
+              .time 18:42
+            .content
+              h1 Январь вступает в силу
+              .desc
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus exercitationem asperiores ab aspernatur? Deserunt sequi adipisci fugiat repellendus consequuntur. Natus repellendus nesciunt odio dolor pariatur incidunt nam aliquam expedita in, eum laborum, placeat sit veniam, magni non ut quisquam. Exercitationem odio sunt porro atque laboriosam distinctio veniam libero eum! Ratione blanditiis obcaecati voluptatibus aspernatur aut provident. Aspernatur inventore a quibusdam voluptate porro consequuntur, vitae, praesentium sed harum aut fugit! Vitae odit placeat dolor velit magnam odio mollitia quam maxime fugiat iure veritatis ratione nostrum aliquid, esse laudantium minus illo molestias. Odit labore eius nisi, reprehenderit fugit culpa dicta laboriosam cumque.
+                .img-container
+                  img(src="img/news-img.jpg", alt="")
+                  .img-title Фото: Виталий Козлов
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur laborum, in, doloribus labore debitis repellat excepturi ea natus deleniti, sapiente nam? Voluptatibus sunt expedita mollitia perferendis facere! Fuga quod cupiditate, laudantium quidem mollitia sequi voluptatem aliquam quaerat distinctio, est autem. Illo blanditiis alias minima porro molestias a officiis atque.
+            a.next-news-link(href="#")
+              |далее
+              span Новость 2
+
+          aside.col-md-4.col-12.d-none.d-md-block
+            a.news-item(href="#")
+              .date 20.12.19
+              .title Тут будет заголовок новости
+            a.news-item(href="#")
+              .date 20.12.19
+              .title Тут будет заголовок новости
+            a.news-item(href="#")
+              .date 20.12.19
+              .title Тут будет заголовок новости
+            a.news-item(href="#")
+              .date 20.12.19
+              .title Тут будет заголовок новости
+            a.news-item(href="#")
+              .date 20.12.19
+              .title Тут будет заголовок новости
+
+    include ../includes/footer.pug
+
+    script(src="js/main.js")

@@ -1,0 +1,188 @@
+.practices
+  position: relative
+  .breadcrumb-container
+    margin-bottom: 25px
+
+    padding-top: 134px
+  .main-content-container
+    position: relative
+  .sliders-block
+    padding-bottom: 140px
+
+    overflow: hidden
+    .container
+    .practices-list
+      position: relative
+
+      min-height: 360px
+
+      .slick-list
+        width: 100vw
+        position: initial
+
+        overflow: visible
+      .item-card
+        position: relative
+        height: 330px
+
+        max-width: 350px
+        margin-right: 22px
+
+        padding: 40px 20px 25px
+
+        color: #fff
+
+        transition: all .2s
+        .content
+          position: relative
+
+          z-index: 100
+          transition: all .2s
+        h2
+          margin-bottom: 12px
+
+          font-size: 18px
+          font-weight: 700
+          letter-spacing: 3px
+          line-height: 1.2
+          text-transform: uppercase
+          
+          transition: all .5s
+        .desc
+          font-size: 12px
+          line-height: 1.8
+
+          transition: all .5s
+        .card-link
+          color: var(--heading)
+          font-size: 0px
+          font-weight: 700
+
+          transition: all .5s
+        &::after
+          position: absolute
+          content: ''
+          top: 0px
+          left: 0px
+          height: 100%
+          width: 100%
+
+          background-color: var(--heading)
+          opacity: .7
+
+          z-index: 50
+
+          transition: all .3s
+        &.slick-current
+          height: auto
+          max-width: 350px
+
+          background-color: transparent            
+          &::after
+            background-color: transparent
+          h2
+            margin-bottom: 10px
+
+            color: var(--heading)
+            line-height: 1.2
+            font-size: 29px
+          .desc
+            margin-bottom: 18px
+
+            color: var(--heading)
+            font-size: 14px
+            font-weight: 500
+          .card-link
+            position: relative
+            padding: 0px 0px 2px
+
+            font-size: 10px
+            letter-spacing: 2px
+            text-transform: uppercase
+
+            transition: all .3s
+            &::after
+              position: absolute
+              content: ''
+              left: 0px
+              bottom: 0px
+              height: 1px
+              width: 100%
+
+              background-color: var(--heading)
+
+              transition: all .3s
+            @media (hover)
+              &:hover
+                color: var(--orange-color)
+                &::after
+                  background-color: var(--orange-color)
+        @media (hover)
+          &:hover
+            &::after
+              opacity: .9
+      .slick-arrow
+        position: absolute
+
+        bottom: -75px
+        height: 46px
+        width: 53px
+
+        font-size: 0px
+        
+        border: 1px solid #fff
+        background-color: transparent
+
+        outline: none
+        z-index: 50
+        &::after
+          position: absolute
+          content: ''
+          left: 0px
+          top: 0px
+          height: 100%
+          width: 100%
+
+          background-position: center
+          background-repeat: no-repeat
+          background-size: 8px 13px
+
+          opacity: .5
+
+          transition: all .3s
+        @media (hover)
+          &:hover
+            &::after
+              opacity: 1
+      .slick-prev
+        right: 50%
+        border-right: none
+        &::after
+          background-image: url(../img/nav-arrow-prev.svg)
+      .slick-next
+        left: 50%
+        border-left: none
+        &::after
+          background-image: url(../img/nav-arrow-next.svg)
+    .practices-bg-list
+      position: absolute
+
+      height: 100%
+      width: 100%
+
+      left: 0px
+      top: 0px
+      .slick-track, .slick-list
+        height: 100%
+      .item
+        display: flex
+        height: 100%
+        width: 100%
+
+
+        overflow: hidden
+        img
+          width: 100%
+          object-fit: cover
+          object-position: center
+

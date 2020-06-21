@@ -1,0 +1,98 @@
+html(lang="en")
+  include ../includes/head.pug
+    title Новости
+  body.news-page
+    section.news-heading
+
+      include ../includes/header.pug
+
+      .breadcrumb-container.container.first-section
+        .breadcrumb
+          li.breadcrumb-item Новости
+
+      .container
+        .heading-container
+          h1 Новости
+    
+    section.main-content
+      .container
+        .news-list
+          a.news-item.news-main-item(href="news-card.html")
+            .content
+              .date-info
+                .date 08.01.2020
+                .time 18:42
+              h3 Январь вступает в силу
+              .desc С 1 января в России расширяются возможности единого налового платежа. Это аналог электронного кошелька, куда человек может добровольно положить некую сумму, после чего эти средства переводятся на специальный счёт Федерального казначейства, а оттуда
+
+          a.news-item.news-md-item.color-sch_1(href="news-card.html")
+            .img-container
+              img(src="img/news-card-bg.jpg", alt="")
+
+            .content
+              .date 20.12.19
+              h3 Тут будет заголовок Новости
+              .desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+          a.news-item.news-sm-item.color-sch_2(href="news-card.html")
+            .img-container
+              img(src="img/news-card-bg.jpg", alt="")
+
+            .content
+              .date 20.12.19
+              h3 Тут будет заголовок Новости
+              .desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+          a.news-item.news-lg-item.color-sch_3(href="news-card.html")
+            .img-container
+              img(src="img/news-card-bg.jpg", alt="")
+            .content
+              .date 20.12.19
+              h3 Тут будет заголовок Новости
+              .desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+
+          a.news-item.news-lg-item.color-sch_3(href="news-card.html")
+            .img-container
+              img(src="img/news-card-bg.jpg", alt="")
+
+            .content
+              .date 20.12.19
+              h3 Тут будет заголовок Новости
+              .desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+
+          a.news-item.news-sm-item.color-sch_1(href="news-card.html")
+            .img-container
+              img(src="img/news-card-bg.jpg", alt="")
+
+            .content
+              .date 20.12.19
+              h3 Тут будет заголовок Новости
+              .desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+          a.news-item.news-md-item.color-sch_2(href="news-card.html")
+            .img-container
+              img(src="img/news-card-bg.jpg", alt="")
+
+            .content
+              .date 20.12.19
+              h3 Тут будет заголовок Новости
+              .desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+            
+        .pagination
+          a.prev(href="#") Предыдущая
+          ul.pagination-list
+            li
+              a(href="#") 1
+            li
+              a(href="#") 2
+            li
+              a.active(href="#") 3
+            li ...
+            li
+              a(href="#") 6
+            li
+              a(href="#") 7
+          a.next(href="#") Следующая
+
+
+
+    include ../includes/footer.pug
+
+    script(src="js/main.js")

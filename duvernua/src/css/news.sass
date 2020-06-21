@@ -1,0 +1,191 @@
+.news-page
+  .news-heading
+    background-color: #000
+  h1
+    margin-bottom: 40px
+
+    color: #fff
+    font-size: 59px
+    font-weight: 700
+    text-transform: uppercase
+  .main-content
+    padding-top: 33px
+    padding-bottom: 28px
+    .news-list
+      display: flex
+      margin-bottom: 26px
+
+      flex-flow: wrap
+      justify-content: space-between
+      .news-item
+        margin-bottom: 32px
+      .news-main-item
+        position: relative
+        width: 100%
+
+        background-image: url(../img/news-bg.jpg)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+
+        color: #fff
+        &::after
+          position: absolute
+          content: ''
+          top: 0px
+          left: 0px
+          height: 100%
+          width: 50%
+
+          background-color: #000
+          opacity: .4
+          z-index: 40
+        .content
+          position: relative
+          width: 50%
+
+
+          padding: 40px 20px 40px 40px
+
+          z-index: 50
+        .date-info
+          display: flex
+          margin-bottom: 15px
+
+          color: #fff
+          font-size: 9px
+          font-weight: 700
+        .date
+          margin-right: 16px
+        h3
+          margin-bottom: 20px
+
+          font-size: 68px
+          font-weight: 900
+          text-transform: uppercase
+        .desc
+          width: 65%
+
+          font-size: 12px
+          font-weight: 500
+          line-height: 1.6
+        @media (hover)
+          &:hover
+            h3
+              color: var(--hover)
+      .color-sch_1
+        color: #fff
+        &::after
+          background-color: rgba(0,0,0,1)
+      .color-sch_2
+        color: #000
+        &::after
+          background-color: rgba(195,192,192,1)
+      .color-sch_3
+        color: #000
+        border: 1px solid #000
+        &::after
+          background-color: rgba(255,255,255,1)
+        @media (hover)
+          &:hover
+            border-color: transparent
+      .news-sm-item,
+      .news-md-item,
+      .news-lg-item
+        position: relative
+        padding: 34px 25px 40px 38px
+        .img-container
+          position: absolute
+          top: 0px
+          left: 0px
+
+          height: 100%
+          width: 100%
+          img
+            height: 100%
+            width: 100%
+
+            object-fit: cover
+            object-position: center
+        .content
+          position: relative
+
+          z-index: 100
+        .date
+          margin-bottom: 35px
+
+          font-size: 11px
+        h3
+          margin-bottom: 15px
+
+          font-size: 18px
+          font-weight: 700
+          text-transform: uppercase
+          letter-spacing: 2px
+          line-height: 1.2
+        .desc
+          font-size: 12px
+          line-height: 1.6
+        &::after
+          position: absolute
+          content: ''
+          top: 0px
+          left: 0px
+          height: calc(100%)
+          width: calc(100%)
+
+          border: 2px solid transparent
+
+          transition: all .3s
+        @media (hover)
+          &:hover
+            h3
+              color: var(--hover)
+            .desc
+              color: #fff
+            &::after
+              background-color: rgba(0,0,0,.57)
+      .news-sm-item
+        width: 27%
+      .news-md-item
+        width: 30%
+      .news-lg-item
+        width: 38%
+    .pagination
+      display: flex
+      justify-content: center
+
+      font-size: 13px
+      .prev
+        color: #000
+        margin-right: 16px
+      .next
+        color: #000
+        margin-left: 16px
+      .prev,
+      .next
+        @media (hover)
+          &:hover
+            color: var(--hover)
+      &-list
+        display: flex
+        li
+          &:not(:last-child)
+            margin-right: 2px
+          a
+            padding: 6px
+
+            border: 1px solid transparent
+
+            color: #000
+            @media (hover)
+              &:hover
+                color: var(--hover)
+            &.active
+              border-bottom: 1px solid var(--hover)
+              
+              color: var(--hover)
+
+              pointer-events: none
+            
+

@@ -1,0 +1,87 @@
+html(lang="en")
+	include ../includes/head.pug
+		title Главная
+	body.index
+		include ../includes/header.pug
+
+		section.main
+			.main-content
+				.container
+					.about-company-block.d-flex
+						h1 
+							span Крупная
+							span Российская
+							span Юридическая Фирма
+						.info
+							.foundation-date c 
+								span 1999
+								|г.
+							.desc оказывающая широкий спектр услуг в различных отраслях права
+						a.arrow-link(href="#")
+							svg(xmlns='http://www.w3.org/2000/svg', width='68.353', height='22.233', viewBox='0 0 68.353 22.233')
+								g#Group_1(data-name='Group 1', transform='translate(-588.5 -188.887)')
+									line#Line_1(data-name='Line 1', x2='67', transform='translate(588.5 199.5)', fill='none', stroke='#929ebc', stroke-width='1')
+									path#Path_15(data-name='Path 15', d='M648.168,229.795l13.867,9.861-13.867,11.58', transform='translate(-6 -40.5)', fill='none', stroke='#929ebc', stroke-width='1')
+
+				.divide-line.d-none.d-lg-block
+					.block_1
+					.block_2
+					.block_3
+				#main-slider.d-none.d-lg-block
+					.item
+						img(src="img/main-slide.jpg", alt="")
+					.item
+						img(src="img/city.jpg", alt="")
+					.item
+						img(src="img/partiya_edy.jpg", alt="")
+
+		section.sliders-block.d-flex
+			.slider-block-item#projects-slider-block
+				.slider-title
+					h2 Проекты
+				.projects-slider-list
+					a.item(href="#")
+						.content
+							h3 Партия еды
+							.desc оказывающая широкий спектр услуг в различных отраслях права
+							.type-mark #корпоративное право
+						.item-img(style="background-image: url(img/partiya_edy.jpg)")
+					a.item(href="#")
+						.content
+							h3 Судебная практика
+							.desc Дювернуа Лигал обладает значительным опытом успешной защиты интересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая высший Арбитражный Суд РФ)
+						.item-img(style="background-image: url(img/city.jpg)")
+			.slider-block-item#practices-slider-block
+				.slider-title
+					h2 Практики
+				.practices-slider-list
+					a.item(href="#")
+						.content
+							h3 Судебная практика
+							.desc Дювернуа Лигал обладает значительным опытом успешной защиты интересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая высший Арбитражный Суд РФ)
+						.item-img(style="background-image: url(img/city.jpg)")
+					a.item(href="#")
+						.content
+							h3 Тут будет заголовок новости
+							.desc Дювернуа Лигал обладает значительным опытом успешной защиты интересов
+						.item-img
+			.slider-block-item#news-slider-block
+				.slider-title
+					h2 Новости
+				.news-slider-list
+					a.item(href="#")
+						.content
+							.date 01.02.20
+							h3 Тут будет заголовок новости
+							.desc Дювернуа Лигал обладает значительным опытом успешной защиты интересов
+						.item-img
+					a.item(href="#")
+						.content
+							.date 20.12.19
+							h3 Партия еды
+							.desc оказывающая широкий спектр услуг в различных отраслях права
+							.type-mark #корпоративное право
+						.item-img(style="background-image: url(img/partiya_edy.jpg)")
+
+		include ../includes/footer.pug
+		script(src="js/main.js")

@@ -1,0 +1,212 @@
+@media screen and ( max-width: 575px )
+  .header
+    .logo-block
+      width: 220px
+      margin-right: 30px
+      img
+        width: 100%
+  .footer
+    .contacts-block
+      margin-bottom: 60px
+      padding: 0px 15px
+      flex-flow: column
+    .contacts-col-item
+      margin: 0px auto
+      text-align: center
+      &:not(:last-child)
+        margin: 0px auto 40px
+      .title
+        margin-bottom: 15px
+      .title,
+      a,
+      .adress
+        margin-left: auto
+        margin-right: auto
+    .facts-block
+      max-width: unset
+
+      padding: 0px 15px
+
+      text-align: center
+    .second-row
+      padding: 10px 15px
+  
+  .index
+    .main
+      h1
+        width: 100%
+        margin-bottom: 20px
+        margin-right: 0px
+      .about-company-block
+        flex-flow: column
+        text-align: center
+        .info
+          margin-bottom: 20px
+          margin-right: 0px
+        .arrow-link
+          margin-bottom: 40px
+
+  .practices
+    .sliders-block
+      .practices-list
+        min-height: 340px
+        .item-card
+          max-width: unset
+          width: 290px
+          margin-right: 0px
+
+          text-align: center
+          h2
+          .desc
+            text-align: left
+          &::after
+            background-color: transparent
+          &.slick-current
+            max-width: unset
+            width: 290px
+            &::after
+              background-color: rgb(255,255,255)
+            h2
+              font-size: 18px
+            .desc
+              font-size: 12px
+
+  .practice-card
+    .main-content
+      .specialize
+        &-list
+          flex-flow: column
+          li
+            width: 100%
+
+            padding-right: 0px
+        &-title
+          margin-left: auto
+          margin-right: auto
+
+          text-align: center
+          &::after
+            width: 100%
+      .title-row
+        flex-flow: column
+        align-items: center
+        h2
+          margin-bottom: 20px
+      .desc-row
+        flex-flow: column
+        p
+          width: 100%
+
+          text-align: center
+          &:not(:last-child)
+            margin-bottom: 20px
+
+  .news-page
+    h1
+      font-size: 48px
+    .main-content
+      .news-list
+        .news-main-item
+          text-align: center
+          .content
+            .date-info
+              justify-content: center
+            h3
+              font-size: 32px
+            .desc
+              width: 100%
+        .news-sm-item,
+        .news-md-item,
+        .news-lg-item
+          text-align: center
+      .pagination
+        flex-flow: wrap
+        .prev
+          order: 2
+        .next
+          order: 3
+        &-list
+          width: 100%
+          margin-bottom: 20px
+          
+          justify-content: center
+
+          order: 1
+          li
+            &:not(:last-child)
+              margin-right: 15px
+
+  .news-card-page
+    h1
+      font-size: 48px
+    .news-content
+      h2
+        font-size: 32px
+
+  .projects-page
+    .projects-list
+      .project-item
+        width: 100%
+        &:nth-child(-n+2)
+          height: auto
+        &:first-child
+          height: calc(100vh - 108px)
+          margin-top: 58px
+
+  .project-card-page
+    .main-content
+      .project-info-block
+        display: flex
+        flex-flow: column
+        .main-img-container
+          z-index: unset
+        .content
+          flex-flow: column
+        .desc-block
+          width: 100%
+          &:not(:last-child)
+            margin-right: 0px
+            margin-bottom: 40px
+        .next-project-link
+          margin: auto
+
+  .crew-page
+    .person-card-container
+      width: 100%
+    .person-card
+      width: 280px
+      .img-container
+        height: 280px
+
+  .crew-card-page
+    .main-content
+      h1
+        font-size: 28px
+      .person-info
+        .contact-block
+          .contact-buttons
+            flex-flow: column
+            a
+              &:not(:last-child)
+                margin-right: 0px
+                margin-bottom: 20px
+        .education-block,
+        .career-block
+          .content
+            flex-flow: column
+            .content-item
+              width: 100%
+        .rating-block
+          .nomination-item:not(:last-child)
+            margin-right: 0px
+            margin-bottom: 10px
+          .nomination-row
+            flex-flow: column
+
+@media screen and ( min-width: 576px )
+  .practices
+    .sliders-block
+      .practices-list
+        .item-card
+
+          

@@ -1,0 +1,165 @@
+html,body,
+div,span,p,a,
+applet,
+object,
+iframe,
+h1,h2,h3,h4,h5,h6,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+caption,table,tr,th,td,thead,tbody,tfoot,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,
+output,
+ruby,
+section,article,
+summary,
+time,
+mark,
+audio,video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	outline: none
+
+/* HTML5 display-role reset for older browsers */
+header,footer,section,article
+aside,
+details,
+figcaption,
+figure,
+hgroup,
+menu,nav
+	display: block
+
+body
+	line-height: 1
+	font-family: Montserrat, sans-serif
+	
+	display: flex
+	flex-flow: column
+	padding-bottom: 50px
+
+blockquote,
+q
+	quotes: none
+
+ol,ul
+	list-style: none
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+a,
+a:visited
+	text-decoration: none
+	-webkit-transition: all .2s ease-in-out
+	transition: all .2s ease-in-out
+
+a:hover,
+a:visited:hover
+	text-decoration: none
+
+a:focus
+	outline: 0
+
+input
+	outline: none
+
+*:not(.slick-track):not(.slick-list)
+	-webkit-transition: all .2s ease-in-out
+	transition: all .2s ease-in-out
+
+.ovh
+	overflow: hidden
+
+\:root
+	--main: #707070
+	--elem-color-purple: #9283BE
+	--elem-color-blue: #929EBC
+	--orange-color: #F7941D
+	--hover: #9FC058
+	--heading: #302643
+	--bgshadow: #51476B
+	--turquoise: #87AC9F
+
+.breadcrumb-container
+	position: relative
+	margin-bottom: 50px
+
+	padding-top: 150px
+
+	z-index: 100
+.breadcrumb
+	margin: 0px
+	
+	padding: 0px
+
+	background: none
+	a
+		color: #fff
+		font-size: 12px
+		@media (hover)
+			&:hover
+				text-decoration: underline
+	li
+		color: #fff
+		font-size: 12px
+		&:before
+			color: #fff
+	&-item + .breadcrumb-item::before
+		color: #fff
+
+
+@import _header.sass
+@import _footer.sass
+@import index.sass
+@import practices.sass
+@import practice-card.sass
+@import news.sass
+@import news-card.sass
+@import projects.sass
+@import project-card.sass
+@import crew.sass
+@import crew-card.sass
+@import template.sass
+@import bp1200.sass
+@import bp992.sass
+@import bp768.sass
+@import bp576.sass

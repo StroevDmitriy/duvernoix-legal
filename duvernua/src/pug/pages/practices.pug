@@ -1,0 +1,52 @@
+html(lang="en")
+	include ../includes/head.pug
+		title Практики
+	body.practices
+		section.main-content-container
+			include ../includes/header.pug
+
+			.breadcrumb-container.container.first-section
+				.breadcrumb
+					li.breadcrumb-item
+						a(href="#") Главная
+					li.breadcrumb-item(aria-current="page") Практики
+
+			.sliders-block
+				.container
+					.practices-bg-list
+						.item
+							img(src="img/bg_city_big.jpg", alt="")
+						.item
+							img(src="img/bg_sky.jpg", alt="")
+						.item
+							img(src="img/bg_city_big.jpg", alt="")
+						.item
+							img(src="img/bg_sky.jpg", alt="")
+
+					.practices-list.d-flex
+						.item-card.active
+							.content
+								h2 Судебная практика
+								.desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+								a.card-link(href="practice-card.html") О практике
+						.item-card
+							.content
+								h2 Налоговая практика
+								.desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+								a.card-link(href="practice-card.html") О практике
+						.item-card
+							.content
+								h2 Корпоративная практика
+								.desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+								a.card-link(href="practice-card.html") О практике
+						.item-card
+							.content
+								h2 Практика недвижимости
+								.desc Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+								a.card-link(href="practice-card.html") О практике
+								
+				
+
+		include ../includes/footer.pug
+
+		script(src="js/main.js")

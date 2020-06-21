@@ -1,0 +1,250 @@
+.index
+  .main
+    position: relative
+    min-height: 324px
+
+    padding-top: 150px
+    &-content
+      display: flex
+    .divide-line
+      height: 100%
+      width: 25px
+      position: absolute
+      right: calc(.4*(100% - 25px))
+      top: 0px
+      .block_1
+        width: 100%
+        height: 50%
+        background-color: var(--elem-color-purple)
+      .block_2
+        width: 100%
+        height: 12%
+        background-color: var(--orange-color)
+      .block_3
+        width: 100%
+        height: 38%
+        background-color: #EF4123
+    h1
+      width: 47%
+      padding-right: 30px
+
+      color: var(--heading)
+      font-size: 20px
+      font-weight: 700
+      line-height: 1.5
+      text-transform: uppercase
+      span
+        display: block
+    .about-company-block
+      width: calc(.6*(100% - 25px))
+      
+      align-items: center
+      .foundation-date
+        margin-bottom: 8px
+
+        color: var(--hover)
+        font-size: 16px
+        font-weight: 700
+        span
+          font-size: 33px
+      .desc
+        color: var(--elem-color-blue)
+        font-size: 12px
+        line-height: 1.2
+      .info
+        width: 28%
+        margin-right: 20px
+      .arrow-link
+        position: relative
+        left: 0px
+        display: block
+        height: 22px
+        width: 68px
+        transition: all .3s
+        @media (hover)
+          &:hover
+            left: 10px
+            line,
+            path
+              stroke: var(--hover)
+    #main-slider
+      position: absolute
+      top: 0px
+      right: 0px
+      height: 100%
+
+      margin-left: auto
+      width: calc(.4*(100% - 25px))
+      .slick-list
+        height: 100%
+      .slick-track
+        height: 100%
+      .item
+        display: flex
+        width: 100%
+        height: 100%
+        img
+          height: 100%
+          width: 100%
+
+          object-fit: cover
+          object-position: center
+  .sliders-block
+    .slick-dots
+      display: flex
+      position: absolute
+      bottom: 20px
+      right: 40px
+      li
+        height: 11px
+        width: 11px
+
+        padding: 0px
+
+        border: 1px solid #fff
+        border-radius: 50%
+
+        font-size: 0px
+
+        cursor: pointer
+        transition: all .5s
+        button
+          display: none
+        &:not(:last-child)
+          margin-right: 8px
+        &.slick-active
+          background-color: #fff
+
+    .slider-block-item
+      position: relative
+      width: 33.333%
+      .slider-title
+        display: flex
+        align-items: center
+        justify-content: center
+        
+        position: absolute
+        left: 0px
+        top: 0px
+
+        padding: 16px 25px
+
+        z-index: 500
+      .item
+        position: relative
+        display: flex
+        flex-flow: column
+        height: 300px
+        padding: 100px 30px 18px
+        background-color: #cecece
+        
+        .content
+          display: flex
+          flex-flow: column
+          height: 100%
+          position: relative
+          z-index: 500
+        h3
+          margin-bottom: 6px
+
+          color: #fff
+          font-size: 18px
+          font-weight: 700
+          letter-spacing: 2px
+          text-transform: uppercase
+        .desc
+          color: #fff
+          font-size: 12px
+          line-height: 1.6
+          opacity: .64
+        .type-mark
+          margin-top: auto
+          color: #fff
+          font-size: 12px
+          text-transform: uppercase
+        .item-img
+          position: absolute
+          top: 0px
+          left: 0px
+          width: 100%
+          height: 100%
+          background-color: #51476B
+          opacity: 1
+          z-index: 300
+          background-blend-mode: multiply
+          background-repeat: no-repeat
+          background-size: cover
+          background-position: center
+          img
+            object-fit: cover
+            object-position: center
+            height: 100%
+            width: 100%
+      .slick-next,
+      .slick-prev
+        position: absolute
+        top: 0px
+        width: 52px
+        height: 44px
+
+        border: none
+
+        font-size: 0px
+
+        background-repeat: no-repeat
+        background-position: center
+
+        outline: none
+        z-index: 10
+        @media (hover)
+          &:hover
+            opacity: .8
+      .slick-next
+        right: 0px
+        background-image: url(../img/nav-arrow-next.svg)
+      .slick-prev
+        right: 50px
+        background-image: url(../img/nav-arrow-prev.svg)
+    #projects-slider-block
+      .slider-title
+        background-color: var(--elem-color-blue)
+      .item
+        .item-img
+          background-color: #51476B
+      .slick-next,
+      .slick-prev
+        background-color: var(--elem-color-blue)
+    #practices-slider-block
+      .slider-title
+        background-color: var(--hover)
+      .item
+        .item-img
+          background-color: #87AC9F
+      .slick-next,
+      .slick-prev
+        background-color: var(--hover)
+    #news-slider-block
+      .slider-title
+        background-color: var(--elem-color-purple)
+      .item
+        padding-top: 78px
+        .date
+          margin-bottom: 10px
+          
+          color: #fff
+          font-size: 11px
+        .item-img
+          background-color: #302643
+      .slick-next,
+      .slick-prev
+        background-color: var(--elem-color-purple) 
+    h2
+      color: #fff
+      font-size: 12px
+      font-weight: 700
+      letter-spacing: 1px
+      text-transform: uppercase
+
+
+
+

@@ -1,0 +1,115 @@
+.projects-page
+  position: relative
+  .projects-heading
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 100%
+  .projects-list
+    flex-flow: wrap
+    .project-item
+      display: flex
+      position: relative
+      height: 308px
+      width: 33.333%
+
+      align-items: flex-end
+      &::after
+        position: absolute
+        content: ''
+        
+        width: 100%
+        bottom: 0px
+        left: 0px
+
+        background-color: var(--bgshadow)
+
+        transition: all .3s
+
+        z-index: 10
+      .img-container
+        position: absolute
+        top: 0px
+        left: 0px
+        height: 100%
+        width: 100%
+
+        z-index: 5
+        img
+          height: 100%
+          width: 100%
+          object-fit: cover
+          object-position: center
+      .content
+        position: relative
+        height: 200px
+        width: 100%
+
+        padding: 35px 40px
+
+        color: #fff
+
+        overflow: hidden
+        z-index: 20
+      .type-title
+        margin-bottom: 16px
+
+        font-size: 10px
+        font-weight: 700
+        text-transform: uppercase
+      .item-title
+        margin-bottom: 6px
+
+        font-size: 20px
+        font-weight: 700
+        text-transform: uppercase
+      .desc
+        font-size: 12px
+        line-height: 1.6
+      &:nth-child(2n+4)
+        &::after
+          height: 100%
+          opacity: 1
+        &.layer-color-1
+          &::after
+            background-color: var(--turquoise)
+        &.layer-color-2
+          &::after
+            background-color: var(--hover)
+        &.layer-color-3
+          &::after
+            background-color: var(--elem-color-purple)
+        &.layer-color-4
+          &::after
+            background-color: var(--orange-color)
+        @media (hover)
+          &:hover
+            &::after
+              opacity: .78
+      &:nth-child(2n+5)
+        &::after
+          height: 200px
+          opacity: .44
+        @media (hover)
+          &:hover
+            &::after
+              height: 100%
+
+              opacity: .78
+      &:nth-child(-n+3)
+        height: 600px
+        .content
+          height: 250px
+          padding: 45px 50px
+        &::after
+          height: 250px
+
+          opacity: .8
+
+          filter: brightness(.5)
+        @media (hover)
+          &:hover
+            &::after
+              filter: brightness(.3)
+              opacity: .9
+            

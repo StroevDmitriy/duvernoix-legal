@@ -1,0 +1,102 @@
+html(lang="en")
+  include ../includes/head.pug
+    title Карточка команды
+  body.crew-card-page
+    section.project-card-heading
+      include ../includes/header.pug
+    
+      .breadcrumb-container.container.first-section
+        .breadcrumb
+          li.breadcrumb-item
+            a(href="#") Команда
+          li.breadcrumb-item
+            a(href="#") Партнёры
+          li.breadcrumb-item Носков Егор
+
+
+    section.main-content
+      .container
+        .row.person-card
+          .offset-0.offset-sm-2.offset-md-3.offset-lg-0.col-12.col-sm-8.col-md-6.col-lg-5.person-img-container
+            img(src="img/person-img.jpg", alt="")
+          .col-12.col-lg-7.person-info
+            .name-block
+              h1 Арбузов Александр
+              .status Партнер, руководитель корпоративной практики
+            .contact-block
+              .email-container
+                .title e-mail
+                a(href="mailto:alexander.arbuzov@duvernoix.ru") alexander.arbuzov@duvernoix.ru
+              .contact-buttons
+                a.v-card-button(href="#") скачать v-card
+                a.write-msg-button(href="#") написать личное сообщение
+            .person-characteristic
+              .spec-block.specialization-block
+                .title-container
+                  h3 Специализация
+                .content Управление проектами и консультирование по вопросам коммерческого, корпоративного (в том числе создание совместных предприятий и холдинговых структур), антимонопольного законодательства, а также it/ip, проведение разного рода due diligence, сопровождение сделок m&a (в том числе осложнённых инструментами английского права), участие в судебных разбирательствах и банкротных процедурах
+              .spec-block.education-block
+                .title-container
+                  h3 Образование
+                .content
+                  .content-item
+                    .dates 1997 г.
+                    .desc окончил юридический факультет Санкт-Петербургского государственного университета
+                  .content-item
+                    .dates 1997 - 2000 гг.
+                    .desc проходил обучение в аспирантуре при факультете международных отношений СПбГУ
+              .spec-block.career-block
+                .title-container
+                  h3 Карьера
+                .content
+                  .content-item
+                    .dates 1996 - 1997 гг.
+                    .desc главный юристконсульт в юридическом комитете администрации Санкт-Петербурга
+                  .content-item
+                    .dates 1997 - 1999 гг.
+                    .desc старший юрист в компании Олега Тинькова «Петросиб»
+                  .content-item
+                    .dates 1999 г.
+                    .desc основал юридическую фирму Дювернуа Консалтинг, впоследствии - Дювернуа Лигал
+                  .content-item
+                    .dates 2009 - 2012 гг.
+                    .desc являлся членом совета директоров ОАО «Кировский завод»
+                  .content-item
+                    .dates с 2012 г.
+                    .desc председатель совета директоров ОАО «Кировский завод»
+                  .content-item
+                    .dates с 2012 г.
+                    .desc член правления ленинградской торгово-промышленной палаты. Адвокат, член Санкт-Петербургской городской коллегии адвокатов.
+              .spec-block.rating-block
+                .title-container
+                  h3 Рейтинги
+                .content
+                  .desc На протяжении многих лет Егор Носков отмечается международными и российскими юридическими рейтингами:
+                  .content-item
+                    .rating-name
+                      span Best lawyers 2019
+                      |номинации в двух категориях:
+                    .nomination-row.d-flex
+                      .nomination-item
+                        .nomination-name Corporate law
+                        .nomination-desc корпоративное право
+                      .nomination-item
+                        .nomination-name Acquisitions law
+                        .nomination-desc cлияния и поглощения
+              .spec-block.publications-block
+                .title-container
+                  h3 Публикации
+                .content
+                  .content-item
+                    .name Рбк про/от левых баз данных до big data: как эволюционировали технологии юристов.
+                    a.publication-link(href="#") ссылка на публикацию
+        .next-person-link-container
+          a.next-person-link(href="#")
+            .title далее
+              .status партнер
+              .name Гущев Игорь
+            .img-container
+              img(src="img/partiya_edy.jpg", alt="")
+    include ../includes/footer.pug
+
+    script(src="js/main.js")

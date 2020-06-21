@@ -1,0 +1,84 @@
+@media screen and ( max-width: 767px )
+  .index
+    .main
+      h1
+        width: auto
+        padding-right: 0px
+        margin-right: 40px
+        display: inline-block
+
+        width: auto
+      .about-company-block
+        .info
+          width: auto
+          margin-right: 40px
+    .sliders-block
+      flex-flow: column
+      .slider-block-item
+        width: 100%
+  
+  .news-page
+    .main-content
+      .news-list
+        .news-main-item
+          &::after
+            width: 100%
+          .content
+            width: 100%
+        .news-sm-item,
+        .news-md-item,
+        .news-lg-item
+          width: 100%
+  
+  .news-card-page
+    .news-content
+      &::after
+        position: absolute
+        content: ''
+
+        bottom: -40px
+        left: 0px
+        width: 100%
+        height: 1px
+
+        background-color: #000
+      .content::after
+        display: none
+    aside
+      display: flex
+      margin-bottom: 60px
+
+      flex-flow: column
+      align-items: center
+
+      padding-top: 20px
+      padding-left: 15px
+
+  .projects-page
+    .projects-list
+      .project-item
+        width: 50%
+        &:nth-child(-n+3)
+          height: auto
+        &:nth-child(-n+2)
+          height: 600px
+
+  .project-card-page
+    .main-content
+      .project-info-block
+        padding: 100px 20px 40px
+        .desc-block
+          padding: 40px 20px 30px
+          width: 48%
+          &:not(:last-child)
+            margin-right: 20px
+
+  .crew-page
+    .person-card-container
+      width: 50%
+    .person-card
+      width: 230px
+      .img-container
+        height: 230px
+
+

@@ -1,0 +1,101 @@
+.news-card-page
+  .news-heading
+    background-color: #000
+  .main-title
+    margin-bottom: 40px
+
+    color: #fff
+    font-size: 59px
+    font-weight: 700
+    text-transform: uppercase
+  .main-content
+    padding-top: 45px
+  .news-content
+    display: flex
+
+    margin-bottom: 60px
+
+    flex-flow: column
+    .date-info
+      margin-bottom: 50px
+      
+      font-size: 9px
+      font-weight: 700
+    .date
+      margin-right: 10px
+    .content
+      position: relative
+      margin-bottom: 60px
+      &::after
+        position: absolute
+        content: ''
+        top: 0px
+        right: -30px
+        width: 1px
+        height: 100%
+
+        background-color: #000
+    h1
+      margin-bottom: 20px
+
+      font-size: 37px
+      font-weight: 700
+      text-transform: uppercase
+    .desc
+      font-size: 12px
+      font-weight: 500
+      line-height: 1.6
+      p
+        &:not(:last-child)
+          margin-bottom: 25px
+    .img-container
+      margin-bottom: 30px
+      img
+        width: 100%
+        margin-bottom: 8px
+      .img-title
+        color: #A5A5A5
+        font-size: 11px
+    .next-news-link
+      display: flex
+      max-width: 50%
+      margin-left: auto
+
+      flex-flow: column
+
+      color: #A5A5A5
+      font-size: 12px
+      span
+        margin-top: 2px
+
+        color: #171717
+        line-height: 1.4
+        font-size: 13px
+      @media (hover)
+        &:hover
+          span
+            color: var(--hover)
+  aside
+    padding-top: 60px
+    padding-left: 40px
+    .news-item
+      display: inline-block
+
+      color: #000
+      &:not(:last-child)
+        margin-bottom: 44px
+      .date
+        margin-bottom: 12px
+
+        font-size: 11px
+      .title
+        font-size: 15px
+        font-weight: 700
+        line-height: 1.2
+        letter-spacing: 3px
+        text-transform: uppercase
+      @media (hover)
+        &:hover
+          .title
+            color: var(--hover)
+

@@ -1,0 +1,46 @@
+html(lang="en")
+	include ../includes/head.pug
+		title Карточка практики
+	body.practice-card
+		section.card-heading(style="background-image: url(img/bg_city_big.jpg)")
+
+			include ../includes/header.pug
+
+			.breadcrumb-container.container.first-section
+				.breadcrumb
+					li.breadcrumb-item
+						a(href="#") Главная
+					li.breadcrumb-item
+						a(href="#") Практики
+					li.breadcrumb-item(aria-current="page") 		Судебная практика
+
+			.container
+				.heading-container
+					h1 Судебная практика
+
+		section.main-content
+			.container
+				.title-row.d-flex
+					h2 О практике
+					a.practice-director.d-flex(href="#")
+						.avatar
+							img(src="img/arbuzov.jpg", alt="")
+						.info
+							.name Арбузов Александр
+							.status руководитель практики
+				.desc-row.d-flex
+					p Дювернуа Лигал обладает значительным опытом успешной защиты итересов клиентов в арбитражных и федеральных судах всех уровней, третейских судах (включая Высший Арбитражный Суд РФ, Верховный Суд Российской Федерации, МКАС) по различным категориям дел.
+					p Специалистам нашей практики доверяют наиболее сложные споры в области корпоративного, трудового, семейного, гражданского и административного права.
+				.specialize-block
+					.specialize-title Мы безупречно представляем интересы российских и иностранных клиентов по вопросам:
+					ul.specialize-list
+						li разрешения корпоративных споров и урегулирования корпоративных конфликтов
+						li взыскания задолженности и убытков
+						li урегулирования споров с государственными органами, включая ФАС
+						li оспаривания сделок и признания права собственноси на имущеество
+						li разрешения трудовых споров, споров в сфере недвижимости и строительства
+						li разрешения споров из государственных контрактов и контрактов, заключенных компаниями с государственным участием
+
+		include ../includes/footer.pug
+
+		script(src="js/main.js")
